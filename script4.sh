@@ -1,28 +1,27 @@
 #!/bin/bash
 # Script 4: Log Analyzer
 
-file=$1
-word=${2:-"error"}   # default keyword
-
+file="test.txt"
+word="error"
 count=0
 
-if [ ! -f "$file" ]; then
-    echo "File does not exist"
-    exit 1
-fi
+# creating sample log file
+echo "error occurred" > $file
+echo "all good" >> $file
+echo "another error found" >> $file
 
-# reading file line by line
+# reading file
 while read line
 do
     echo "$line" | grep -iq "$word"
     if [ $? -eq 0 ]; then
         count=$((count + 1))
     fi
-done < "$file"
+done < $file
 
 echo ""
 echo "Keyword '$word' found $count times"
-echo ""
 
-echo "Last few matching lines:"
-grep -i "$word" "$file" | tail -5
+echo ""
+echo "Last matching lines:"
+grep -i "$word" $file | tail -5
