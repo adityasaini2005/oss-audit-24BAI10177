@@ -1,33 +1,38 @@
 #!/bin/bash
-# Script 2: Kernel / Package Info
+# Script 2: Kernel Information
 
-echo "Checking Linux Kernel details..."
+echo "Checking Linux Kernel..."
+
+kernel=$(uname -r)
+echo "Kernel Version: $kernel"
+
 echo ""
-
-# kernel version
-uname -r
-
-# full system info
-echo ""
-echo "Detailed Info:"
+echo "Full System Info:"
 uname -a
 
 echo ""
 
-# simple description using case
+# simple check
+if [ -n "$kernel" ]; then
+    echo "Kernel is present on system"
+else
+    echo "Kernel not found"
+fi
+
+# case statement
 choice="linux"
 
 case $choice in
     linux)
-        echo "Linux Kernel: It is the core of the OS which manages hardware and processes."
+        echo "Linux Kernel: Core part of OS managing hardware and processes"
         ;;
     git)
-        echo "Git: Version control system used by developers."
+        echo "Git: Version control system"
         ;;
     vlc)
-        echo "VLC: Media player which supports many formats."
+        echo "VLC: Media player"
         ;;
     *)
-        echo "No description available."
+        echo "Unknown software"
         ;;
 esac
