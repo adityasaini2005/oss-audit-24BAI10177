@@ -1,49 +1,32 @@
 # Open Source Audit Project
 
-## 👤 Student Details
-Name: Aditya Saini  
-Registration Number: 24BAI10177  
+## Name: Aditya Saini  
+## Registration Number: 24BAI10177  
 
 ---
 
-## 💻 Chosen Software
-Linux Kernel
+## Project Overview
+
+This project focuses on analyzing the Linux Kernel as an open-source system. It covers important aspects such as its origin, licensing, ethics, and ecosystem.  
+
+Along with theoretical understanding, practical implementation has been done using shell scripting. These scripts help in exploring system-level information and basic automation tasks.
 
 ---
 
-## 📜 Project Description
-This project is an audit of the Linux Kernel as part of the Open Source Software course.  
-It focuses on understanding the origin, philosophy, licensing, and real-world usage of the Linux Kernel.  
+## Scripts Included
 
-The project also includes 5 shell scripts that demonstrate basic Linux and automation concepts.
-
----
-
-## ⚙️ Shell Scripts Description
-
-### 1. System Identity Report
-Displays system information such as kernel version, user, uptime, and Linux distribution.
-
-### 2. Kernel Information Script
-Shows Linux kernel details and provides a short description of its purpose.
-
-### 3. Disk and Permission Auditor
-Checks important directories and displays their size, ownership, and permissions.
-
-### 4. Log File Analyzer
-Reads a log file and counts occurrences of a keyword like "error".
-
-### 5. Open Source Manifesto Generator
-Generates a personalized open-source philosophy statement based on user input.
+- **script1.sh** → System Identity Report  
+- **script2.sh** → Kernel Information  
+- **script3.sh** → Directory Audit  
+- **script4.sh** → Log Analyzer  
+- **script5.sh** → Manifesto Generator  
 
 ---
 
-## ▶️ How to Run Scripts
+## How to Run the Scripts
 
-### Step 1: Give permission
+Follow these steps in Git Bash or Linux terminal:
+
+### Step 1: Give execution permission
 ```bash
-chmod +x script1.sh
-chmod +x script2.sh
-chmod +x script3.sh
-chmod +x script4.sh
-chmod +x script5.sh
+chmod +x script1.sh script2.sh script3.sh script4.sh script5.sh
