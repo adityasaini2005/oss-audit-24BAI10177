@@ -29,4 +29,8 @@ Follow these steps in Git Bash or Linux terminal:
 
 ### Step 1: Give execution permission
 ```bash
-chmod +x script1.sh script2.sh script3.sh script4.sh script5.sh
+chmod +x script1.sh
+chmod +x script2.sh
+chmod +x script3.sh
+chmod +x script4.sh
+chmod +x script5.sh
