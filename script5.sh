@@ -5,19 +5,17 @@ echo "Answer a few questions:"
 echo ""
 
 read -p "Tool you use daily: " tool
-read -p "What does freedom mean to you: " freedom
+read -p "Freedom means to you: " freedom
 read -p "Something you want to build: " build
 
-today=$(date '+%d %B %Y')
-file="manifesto_$(whoami).txt"
+date_now=$(date)
+file="manifesto.txt"
 
-echo "" > $file
-
-echo "Date: $today" >> $file
+echo "Date: $date_now" > $file
 echo "" >> $file
 echo "I believe open source is about $freedom." >> $file
-echo "I regularly use $tool in my daily work." >> $file
-echo "In the future, I want to build $build and share it openly." >> $file
+echo "I use $tool regularly in my work." >> $file
+echo "In future, I want to build $build and share it openly." >> $file
 
 echo ""
 echo "Manifesto saved in $file"
