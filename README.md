@@ -34,3 +34,8 @@ chmod +x script2.sh
 chmod +x script3.sh
 chmod +x script4.sh
 chmod +x script5.sh
+./script1.sh
+./script2.sh
+./script3.sh
+./script4.sh
+./script5.sh
