@@ -2,17 +2,16 @@
 # Script 1: System Identity Report
 # Name: Aditya Saini
 
-# basic info
 name="Aditya Saini"
 software="Linux Kernel"
 
 kernel=$(uname -r)
 user=$(whoami)
-uptime=$(uptime -p)
 date_now=$(date)
 
-# distro info (sometimes this file may differ slightly)
-distro=$(grep PRETTY_NAME /etc/os-release | cut -d '"' -f2)
+# Git Bash fallback values
+distro="Windows (Git Bash)"
+uptime=$(date)
 
 echo "--------------------------------------"
 echo " Open Source Audit Project"
